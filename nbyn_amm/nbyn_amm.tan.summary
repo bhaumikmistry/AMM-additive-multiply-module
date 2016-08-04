@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.782 ns
+From           : x[29]
+To             : amm_latch:\for_loop_1:3:for_loop_2:8:if_typeIII:amm_l|latch_d:L1|Q[5]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.577 ns
+From           : amm_latch:\for_loop_1:16:for_loop_2:4:if_typeIV:if_subtype1:amm_l|latch_d:L1|Q[1]
+To             : p[43]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.365 ns
+From           : x[24]
+To             : amm_latch:\for_loop_1:6:for_loop_2:7:if_typeV:amm_l|latch_d:L1|Q[0]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 237.70 MHz ( period = 4.207 ns )
+From           : amm_latch:\for_loop_1:15:for_loop_2:7:if_typeV:amm_l|latch_d:L1|Q[0]
+To             : amm_latch:\for_loop_1:16:for_loop_2:6:if_typeIV:if_subtype1:amm_l|latch_d:L1|Q[4]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
