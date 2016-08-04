@@ -1,0 +1,93 @@
+-- using latch --
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity latch_88amm is
+port( clk: in std_logic;
+	  x	: in std_logic_vector(7  downto 0);
+	  y	: in std_logic_vector(7  downto 0);
+	  c : in std_logic_vector(7  downto 0);
+	  d	: in std_logic_vector(7  downto 0);
+	  tp : out std_logic_vector(15 downto 0));
+	  
+end latch_88amm;
+				
+architecture amm_rtl of latch_88amm is
+  		
+component add_mm is
+port (	a		: in std_logic_vector(3 downto 0);
+		c		: in std_logic_vector(3 downto 0);
+		b 		: in std_logic_vector(1 downto 0);
+		d 		: in std_logic_vector(1 downto 0);
+		p		:out std_logic_vector(5 downto 0));
+  end component;
+  
+component latch_d is
+port (  D  : in  STD_LOGIC_vector(5 downto 0);
+        EN : in  STD_LOGIC;
+        Q  : out STD_LOGIC_vector(5 downto 0));
+	end component;
+	  
+
+
+	  
+signal 	pl,ph		: std_logic_vector(23 downto 0);
+signal  p			: std_logic_vector(15  downto 0);
+signal  tc		: std_logic_vector(15 downto 0);
+signal  p1,p2,p3,p4,p5,p6: std_logic_vector(5 downto 0);
+signal clk_p : STD_LOGIC;
+signal zero : std_logic;
+
+begin
+
+--	Temp New Clk
+--		zero <= '0';
+--    clk_p <= '1' when (clk = '0') else zero ;
+	
+	
+	
+	amm1 : add_mm port map(x(3 downto 0), c(3 downto 0),		 y(1 downto 0), d(1 downto 0),				p1(5 downto 0));
+	L1	 : latch_d port map(p1(5 downto 0),clk,pl(5 downto 0));
+	
+	amm2 : add_mm port map(x(7 downto 4), c(7 downto 4),		 y(1 downto 0), pl(5 downto 4),		p2(5 downto 0));
+	L2	 : latch_d port map(p2(5 downto 0),clk,ph(5 downto 0));	
+	
+	tc(3 downto 2) <= ph(1 downto 0);	
+	tc(1 downto 0) <= pl(3 downto 2);
+
+	amm3 : add_mm port map(x(3 downto 0), tc(3 downto 0),y(3 downto 2), d(3 downto 2),			 	p3(5 downto 0));
+	L3	 : latch_d port map(p3(5 downto 0),clk,pl(11 downto 6));	
+
+
+	amm4 : add_mm port map(x(7 downto 4), ph(5 downto 2),y(3 downto 2), pl(11 downto 10),	p4(5 downto 0));
+	L4	 : latch_d port map(p4(5 downto 0),clk,ph(11 downto 6));
+
+	tc(5 downto 4) <= pl(9 downto 8);	
+	tc(7 downto 6) <= ph(7 downto 6);
+	
+	amm5 : add_mm port map(x(3 downto 0), tc(7 downto 4),y(5 downto 4), d(5 downto 4),				p5(5 downto 0));
+	L5	 : latch_d port map(p5(5 downto 0),clk,pl(17 downto 12));
+
+	amm6 : add_mm port map(x(7 downto 4), ph(11 downto 8),y(5 downto 4), pl(17 downto 16),	p6(5 downto 0));
+	L6	 : latch_d port map(p6(5 downto 0),clk,ph(17 downto 12));
+	
+	tc(9 downto 8) <= pl(15 downto 14);
+	tc(11 downto 10)<= ph(13 downto 12);
+	
+	amm7 : add_mm port map(x(3 downto 0), tc(11 downto 8),y(7 downto 6), d(7 downto 6),				pl(23 downto 18));	
+
+	amm8 : add_mm port map(x(7 downto 4), ph(17 downto 14),y(7 downto 6),pl(23 downto 22),	ph(23 downto 18));
+	
+	
+		tp(1 downto 0)	<=	pl(1 downto 0);
+		tp(3 downto 2)	<=	pl(7 downto 6);
+		tp(5 downto 4)	<=	pl(13 downto 12);
+		tp(9 downto 6)	<=	pl(21 downto 18);
+		tp(15 downto 10)	<=  ph(23 downto 18);
+
+	
+	
+	
+
+end amm_rtl;

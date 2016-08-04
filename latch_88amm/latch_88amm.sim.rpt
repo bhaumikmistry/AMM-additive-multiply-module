@@ -1,0 +1,628 @@
+Simulator report for latch_88amm
+Sat May 07 01:17:42 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 216 nodes    ;
+; Simulation Coverage         ;      68.98 % ;
+; Total Number of Transitions ; 1078         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Timing          ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; On              ; Off           ;
+; VCD File for PowerPlay Power Analyzer output destination                                   ; latch_88amm.vcd ;               ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      68.98 % ;
+; Total nodes checked                                 ; 216          ;
+; Total output ports checked                          ; 216          ;
+; Total output ports with complete 1/0-value coverage ; 149          ;
+; Total output ports with no 1/0-value coverage       ; 59           ;
+; Total output ports with no 1-value coverage         ; 59           ;
+; Total output ports with no 0-value coverage         ; 67           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |latch_88amm|latch_d:L3|Q[0]                       ; |latch_88amm|latch_d:L3|Q[0]                       ; regout           ;
+; |latch_88amm|latch_d:L3|Q[1]                       ; |latch_88amm|latch_d:L3|Q[1]                       ; regout           ;
+; |latch_88amm|latch_d:L5|Q[0]                       ; |latch_88amm|latch_d:L5|Q[0]                       ; regout           ;
+; |latch_88amm|latch_d:L5|Q[1]                       ; |latch_88amm|latch_d:L5|Q[1]                       ; regout           ;
+; |latch_88amm|latch_d:L5|Q[2]                       ; |latch_88amm|latch_d:L5|Q[2]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm7|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L5|Q[3]                       ; |latch_88amm|latch_d:L5|Q[3]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm7|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L6|Q[0]                       ; |latch_88amm|latch_d:L6|Q[0]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm7|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm7|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L6|Q[1]                       ; |latch_88amm|latch_d:L6|Q[1]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm7|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm7|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm7|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|latch_d:L6|Q[2]                       ; |latch_88amm|latch_d:L6|Q[2]                       ; regout           ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm8|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L6|Q[3]                       ; |latch_88amm|latch_d:L6|Q[3]                       ; regout           ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm8|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm8|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L6|Q[4]                       ; |latch_88amm|latch_d:L6|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm8|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L6|Q[5]                       ; |latch_88amm|latch_d:L6|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm8|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|latch_d:L1|Q[2]                       ; |latch_88amm|latch_d:L1|Q[2]                       ; regout           ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm3|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm3|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|latch_d:L3|Q[2]                       ; |latch_88amm|latch_d:L3|Q[2]                       ; regout           ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm5|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm5|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|latch_d:L3|Q[3]                       ; |latch_88amm|latch_d:L3|Q[3]                       ; regout           ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm5|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L4|Q[0]                       ; |latch_88amm|latch_d:L4|Q[0]                       ; regout           ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm5|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm5|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm5|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|latch_d:L4|Q[2]                       ; |latch_88amm|latch_d:L4|Q[2]                       ; regout           ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm6|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L4|Q[3]                       ; |latch_88amm|latch_d:L4|Q[3]                       ; regout           ;
+; |latch_88amm|latch_d:L5|Q[5]                       ; |latch_88amm|latch_d:L5|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm6|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L4|Q[4]                       ; |latch_88amm|latch_d:L4|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm6|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm6|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L4|Q[5]                       ; |latch_88amm|latch_d:L4|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm6|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm6|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm6|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm6|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm1|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm1|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L2|Q[0]                       ; |latch_88amm|latch_d:L2|Q[0]                       ; regout           ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm3|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm3|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L2|Q[1]                       ; |latch_88amm|latch_d:L2|Q[1]                       ; regout           ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm3|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm3|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|latch_d:L2|Q[2]                       ; |latch_88amm|latch_d:L2|Q[2]                       ; regout           ;
+; |latch_88amm|latch_d:L3|Q[4]                       ; |latch_88amm|latch_d:L3|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm4|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm4|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|latch_d:L3|Q[5]                       ; |latch_88amm|latch_d:L3|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm4|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm4|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm4|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm5|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm4|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm4|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm4|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm2|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|latch_d:L1|Q[5]                       ; |latch_88amm|latch_d:L1|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa6|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa6|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm3|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm3|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa8|sum~0 ; |latch_88amm|add_mm:amm7|full_adder_test:fa8|sum~0 ; combout          ;
+; |latch_88amm|tp[2]                                 ; |latch_88amm|tp[2]                                 ; padio            ;
+; |latch_88amm|tp[3]                                 ; |latch_88amm|tp[3]                                 ; padio            ;
+; |latch_88amm|tp[4]                                 ; |latch_88amm|tp[4]                                 ; padio            ;
+; |latch_88amm|tp[5]                                 ; |latch_88amm|tp[5]                                 ; padio            ;
+; |latch_88amm|tp[6]                                 ; |latch_88amm|tp[6]                                 ; padio            ;
+; |latch_88amm|tp[7]                                 ; |latch_88amm|tp[7]                                 ; padio            ;
+; |latch_88amm|tp[8]                                 ; |latch_88amm|tp[8]                                 ; padio            ;
+; |latch_88amm|tp[9]                                 ; |latch_88amm|tp[9]                                 ; padio            ;
+; |latch_88amm|tp[10]                                ; |latch_88amm|tp[10]                                ; padio            ;
+; |latch_88amm|tp[11]                                ; |latch_88amm|tp[11]                                ; padio            ;
+; |latch_88amm|tp[12]                                ; |latch_88amm|tp[12]                                ; padio            ;
+; |latch_88amm|tp[13]                                ; |latch_88amm|tp[13]                                ; padio            ;
+; |latch_88amm|tp[14]                                ; |latch_88amm|tp[14]                                ; padio            ;
+; |latch_88amm|x[2]                                  ; |latch_88amm|x[2]~corein                           ; combout          ;
+; |latch_88amm|x[3]                                  ; |latch_88amm|x[3]~corein                           ; combout          ;
+; |latch_88amm|x[4]                                  ; |latch_88amm|x[4]~corein                           ; combout          ;
+; |latch_88amm|clk                                   ; |latch_88amm|clk~corein                            ; combout          ;
+; |latch_88amm|y[2]                                  ; |latch_88amm|y[2]~corein                           ; combout          ;
+; |latch_88amm|y[3]                                  ; |latch_88amm|y[3]~corein                           ; combout          ;
+; |latch_88amm|y[4]                                  ; |latch_88amm|y[4]~corein                           ; combout          ;
+; |latch_88amm|clk~clkctrl                           ; |latch_88amm|clk~clkctrl                           ; outclk           ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                   ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |latch_88amm|latch_d:L1|Q[1]                       ; |latch_88amm|latch_d:L1|Q[1]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm7|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm8|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm8|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm1|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm3|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm5|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm6|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L2|Q[4]                       ; |latch_88amm|latch_d:L2|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm4|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|latch_d:L1|Q[4]                       ; |latch_88amm|latch_d:L1|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm2|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm2|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum~0 ; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum~0 ; combout          ;
+; |latch_88amm|tp[1]                                 ; |latch_88amm|tp[1]                                 ; padio            ;
+; |latch_88amm|tp[15]                                ; |latch_88amm|tp[15]                                ; padio            ;
+; |latch_88amm|x[0]                                  ; |latch_88amm|x[0]~corein                           ; combout          ;
+; |latch_88amm|y[6]                                  ; |latch_88amm|y[6]~corein                           ; combout          ;
+; |latch_88amm|d[6]                                  ; |latch_88amm|d[6]~corein                           ; combout          ;
+; |latch_88amm|x[1]                                  ; |latch_88amm|x[1]~corein                           ; combout          ;
+; |latch_88amm|y[7]                                  ; |latch_88amm|y[7]~corein                           ; combout          ;
+; |latch_88amm|d[7]                                  ; |latch_88amm|d[7]~corein                           ; combout          ;
+; |latch_88amm|x[5]                                  ; |latch_88amm|x[5]~corein                           ; combout          ;
+; |latch_88amm|x[6]                                  ; |latch_88amm|x[6]~corein                           ; combout          ;
+; |latch_88amm|x[7]                                  ; |latch_88amm|x[7]~corein                           ; combout          ;
+; |latch_88amm|y[0]                                  ; |latch_88amm|y[0]~corein                           ; combout          ;
+; |latch_88amm|c[0]                                  ; |latch_88amm|c[0]~corein                           ; combout          ;
+; |latch_88amm|d[0]                                  ; |latch_88amm|d[0]~corein                           ; combout          ;
+; |latch_88amm|y[1]                                  ; |latch_88amm|y[1]~corein                           ; combout          ;
+; |latch_88amm|c[1]                                  ; |latch_88amm|c[1]~corein                           ; combout          ;
+; |latch_88amm|d[1]                                  ; |latch_88amm|d[1]~corein                           ; combout          ;
+; |latch_88amm|d[2]                                  ; |latch_88amm|d[2]~corein                           ; combout          ;
+; |latch_88amm|d[3]                                  ; |latch_88amm|d[3]~corein                           ; combout          ;
+; |latch_88amm|d[4]                                  ; |latch_88amm|d[4]~corein                           ; combout          ;
+; |latch_88amm|y[5]                                  ; |latch_88amm|y[5]~corein                           ; combout          ;
+; |latch_88amm|d[5]                                  ; |latch_88amm|d[5]~corein                           ; combout          ;
+; |latch_88amm|c[2]                                  ; |latch_88amm|c[2]~corein                           ; combout          ;
+; |latch_88amm|c[3]                                  ; |latch_88amm|c[3]~corein                           ; combout          ;
+; |latch_88amm|c[4]                                  ; |latch_88amm|c[4]~corein                           ; combout          ;
+; |latch_88amm|c[5]                                  ; |latch_88amm|c[5]~corein                           ; combout          ;
+; |latch_88amm|c[6]                                  ; |latch_88amm|c[6]~corein                           ; combout          ;
+; |latch_88amm|c[7]                                  ; |latch_88amm|c[7]~corein                           ; combout          ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                   ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |latch_88amm|latch_d:L1|Q[0]                       ; |latch_88amm|latch_d:L1|Q[0]                       ; regout           ;
+; |latch_88amm|latch_d:L1|Q[1]                       ; |latch_88amm|latch_d:L1|Q[1]                       ; regout           ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm7|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm8|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm8|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa1|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa1|sum   ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm1|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa5|sum   ; |latch_88amm|add_mm:amm1|full_adder_test:fa5|sum   ; combout          ;
+; |latch_88amm|add_mm:amm3|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm3|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|latch_d:L1|Q[3]                       ; |latch_88amm|latch_d:L1|Q[3]                       ; regout           ;
+; |latch_88amm|latch_d:L4|Q[1]                       ; |latch_88amm|latch_d:L4|Q[1]                       ; regout           ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm5|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|latch_d:L5|Q[4]                       ; |latch_88amm|latch_d:L5|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm6|full_adder_test:fa2|S1    ; |latch_88amm|add_mm:amm6|full_adder_test:fa2|S1    ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa2|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa2|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm1|full_adder_test:fa5|ca~0  ; |latch_88amm|add_mm:amm1|full_adder_test:fa5|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L2|Q[3]                       ; |latch_88amm|latch_d:L2|Q[3]                       ; regout           ;
+; |latch_88amm|latch_d:L2|Q[4]                       ; |latch_88amm|latch_d:L2|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm5|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm5|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|latch_d:L2|Q[5]                       ; |latch_88amm|latch_d:L2|Q[5]                       ; regout           ;
+; |latch_88amm|add_mm:amm4|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm4|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|latch_d:L1|Q[4]                       ; |latch_88amm|latch_d:L1|Q[4]                       ; regout           ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa1|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa1|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa3|S1    ; |latch_88amm|add_mm:amm2|full_adder_test:fa3|S1    ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa3|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa3|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa4|S1    ; |latch_88amm|add_mm:amm2|full_adder_test:fa4|S1    ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa7|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa7|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa7|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa7|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa4|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa4|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa8|sum   ; |latch_88amm|add_mm:amm2|full_adder_test:fa8|sum   ; combout          ;
+; |latch_88amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; |latch_88amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; combout          ;
+; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum~0 ; |latch_88amm|add_mm:amm8|full_adder_test:fa8|sum~0 ; combout          ;
+; |latch_88amm|tp[0]                                 ; |latch_88amm|tp[0]                                 ; padio            ;
+; |latch_88amm|tp[1]                                 ; |latch_88amm|tp[1]                                 ; padio            ;
+; |latch_88amm|tp[15]                                ; |latch_88amm|tp[15]                                ; padio            ;
+; |latch_88amm|x[0]                                  ; |latch_88amm|x[0]~corein                           ; combout          ;
+; |latch_88amm|y[6]                                  ; |latch_88amm|y[6]~corein                           ; combout          ;
+; |latch_88amm|d[6]                                  ; |latch_88amm|d[6]~corein                           ; combout          ;
+; |latch_88amm|x[1]                                  ; |latch_88amm|x[1]~corein                           ; combout          ;
+; |latch_88amm|y[7]                                  ; |latch_88amm|y[7]~corein                           ; combout          ;
+; |latch_88amm|d[7]                                  ; |latch_88amm|d[7]~corein                           ; combout          ;
+; |latch_88amm|x[5]                                  ; |latch_88amm|x[5]~corein                           ; combout          ;
+; |latch_88amm|x[6]                                  ; |latch_88amm|x[6]~corein                           ; combout          ;
+; |latch_88amm|x[7]                                  ; |latch_88amm|x[7]~corein                           ; combout          ;
+; |latch_88amm|y[0]                                  ; |latch_88amm|y[0]~corein                           ; combout          ;
+; |latch_88amm|c[0]                                  ; |latch_88amm|c[0]~corein                           ; combout          ;
+; |latch_88amm|d[0]                                  ; |latch_88amm|d[0]~corein                           ; combout          ;
+; |latch_88amm|y[1]                                  ; |latch_88amm|y[1]~corein                           ; combout          ;
+; |latch_88amm|c[1]                                  ; |latch_88amm|c[1]~corein                           ; combout          ;
+; |latch_88amm|d[1]                                  ; |latch_88amm|d[1]~corein                           ; combout          ;
+; |latch_88amm|d[2]                                  ; |latch_88amm|d[2]~corein                           ; combout          ;
+; |latch_88amm|d[3]                                  ; |latch_88amm|d[3]~corein                           ; combout          ;
+; |latch_88amm|d[4]                                  ; |latch_88amm|d[4]~corein                           ; combout          ;
+; |latch_88amm|y[5]                                  ; |latch_88amm|y[5]~corein                           ; combout          ;
+; |latch_88amm|d[5]                                  ; |latch_88amm|d[5]~corein                           ; combout          ;
+; |latch_88amm|c[2]                                  ; |latch_88amm|c[2]~corein                           ; combout          ;
+; |latch_88amm|c[3]                                  ; |latch_88amm|c[3]~corein                           ; combout          ;
+; |latch_88amm|c[4]                                  ; |latch_88amm|c[4]~corein                           ; combout          ;
+; |latch_88amm|c[5]                                  ; |latch_88amm|c[5]~corein                           ; combout          ;
+; |latch_88amm|c[6]                                  ; |latch_88amm|c[6]~corein                           ; combout          ;
+; |latch_88amm|c[7]                                  ; |latch_88amm|c[7]~corein                           ; combout          ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Sat May 07 01:17:42 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off latch_88amm -c latch_88amm
+Info: Using vector source file "C:/Users/Bhaumik/Desktop/caa/latch_88amm/latch_88amm.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "p[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "temp[0]" in design.
+Warning: Cannot find channels in vector source file for the following output ports - channels are required for VCD file generation for PowerPlay Power Analyzer
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[0]"
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[1]"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[0]"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[1]"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[0]"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[1]"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[2]"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[3]"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[0]"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[1]"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[2]"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[3]"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L6|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[2]"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[3]"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[2]"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[3]"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[0]"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[1]"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[2]"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[3]"
+    Warning: Output port: "|latch_88amm|latch_d:L5|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L4|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm6|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[0]"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[1]"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[2]"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[3]"
+    Warning: Output port: "|latch_88amm|latch_d:L3|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L2|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm5|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm4|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[4]"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa1|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa1|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa2|S1"
+    Warning: Output port: "|latch_88amm|latch_d:L1|Q[5]"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa5|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa2|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa5|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa3|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa6|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa6|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa3|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa4|S1"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa7|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm3|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm2|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa7|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa4|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa8|sum"
+    Warning: Output port: "|latch_88amm|add_mm:amm1|full_adder_test:fa8|ca~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm7|full_adder_test:fa8|sum~0"
+    Warning: Output port: "|latch_88amm|add_mm:amm8|full_adder_test:fa8|sum~0"
+    Warning: Output port: "|latch_88amm|clk~clkctrl"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      68.98 %
+Info: Number of transitions in simulation is 1078
+Info: Created VCD File C:/Users/Bhaumik/Desktop/caa/latch_88amm/latch_88amm.vcd
+Info: Quartus II Simulator was successful. 0 errors, 190 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Sat May 07 01:17:42 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
