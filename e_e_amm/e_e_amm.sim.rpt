@@ -1,0 +1,345 @@
+Simulator report for e_e_amm
+Sat May 07 01:08:57 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 166 nodes    ;
+; Simulation Coverage         ;      39.76 % ;
+; Total Number of Transitions ; 484          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      39.76 % ;
+; Total nodes checked                                 ; 166          ;
+; Total output ports checked                          ; 166          ;
+; Total output ports with complete 1/0-value coverage ; 66           ;
+; Total output ports with no 1/0-value coverage       ; 18           ;
+; Total output ports with no 1-value coverage         ; 100          ;
+; Total output ports with no 0-value coverage         ; 18           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                        ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S1    ; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S1    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa1|sum   ; |e_e_amm|add_mm:amm5|full_adder_test:fa1|sum   ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm3|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa2|sum~0 ; |e_e_amm|add_mm:amm5|full_adder_test:fa2|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa5|S1    ; |e_e_amm|add_mm:amm5|full_adder_test:fa5|S1    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm3|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa5|ca~0  ; |e_e_amm|add_mm:amm2|full_adder_test:fa5|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum   ; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum   ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa1|sum   ; |e_e_amm|add_mm:amm4|full_adder_test:fa1|sum   ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm5|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa5|S3    ; |e_e_amm|add_mm:amm5|full_adder_test:fa5|S3    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa1|sum   ; |e_e_amm|add_mm:amm7|full_adder_test:fa1|sum   ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa1|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa1|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm2|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum~0 ; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm5|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S1    ; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S1    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum   ; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum   ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm2|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa5|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa5|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa6|sum   ; |e_e_amm|add_mm:amm4|full_adder_test:fa6|sum   ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa1|sum   ; |e_e_amm|add_mm:amm6|full_adder_test:fa1|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa6|sum   ; |e_e_amm|add_mm:amm7|full_adder_test:fa6|sum   ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa1|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa1|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm6|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm4|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm4|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa5|sum~0 ; |e_e_amm|add_mm:amm6|full_adder_test:fa5|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm7|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa5|sum   ; |e_e_amm|add_mm:amm6|full_adder_test:fa5|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa5|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa5|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa6|sum   ; |e_e_amm|add_mm:amm6|full_adder_test:fa6|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa1|sum   ; |e_e_amm|add_mm:amm8|full_adder_test:fa1|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm7|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa1|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa1|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm8|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm6|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa5|sum   ; |e_e_amm|add_mm:amm8|full_adder_test:fa5|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa5|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa5|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm8|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm6|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa6|sum   ; |e_e_amm|add_mm:amm8|full_adder_test:fa6|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm8|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm8|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm8|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa7|sum~0 ; |e_e_amm|add_mm:amm2|full_adder_test:fa7|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum~1 ; |e_e_amm|add_mm:amm4|full_adder_test:fa5|sum~1 ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa7|sum~0 ; |e_e_amm|add_mm:amm4|full_adder_test:fa7|sum~0 ; combout          ;
+; |e_e_amm|p[3]                                  ; |e_e_amm|p[3]                                  ; padio            ;
+; |e_e_amm|p[4]                                  ; |e_e_amm|p[4]                                  ; padio            ;
+; |e_e_amm|p[5]                                  ; |e_e_amm|p[5]                                  ; padio            ;
+; |e_e_amm|p[6]                                  ; |e_e_amm|p[6]                                  ; padio            ;
+; |e_e_amm|p[7]                                  ; |e_e_amm|p[7]                                  ; padio            ;
+; |e_e_amm|p[8]                                  ; |e_e_amm|p[8]                                  ; padio            ;
+; |e_e_amm|p[9]                                  ; |e_e_amm|p[9]                                  ; padio            ;
+; |e_e_amm|p[10]                                 ; |e_e_amm|p[10]                                 ; padio            ;
+; |e_e_amm|p[11]                                 ; |e_e_amm|p[11]                                 ; padio            ;
+; |e_e_amm|p[12]                                 ; |e_e_amm|p[12]                                 ; padio            ;
+; |e_e_amm|p[13]                                 ; |e_e_amm|p[13]                                 ; padio            ;
+; |e_e_amm|p[14]                                 ; |e_e_amm|p[14]                                 ; padio            ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |e_e_amm|add_mm:amm1|ab0[0]                    ; |e_e_amm|add_mm:amm1|ab0[0]                    ; combout          ;
+; |e_e_amm|add_mm:amm1|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm1|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa1|S2    ; |e_e_amm|add_mm:amm3|full_adder_test:fa1|S2    ; combout          ;
+; |e_e_amm|add_mm:amm1|full_adder_test:fa7|sum   ; |e_e_amm|add_mm:amm1|full_adder_test:fa7|sum   ; combout          ;
+; |e_e_amm|add_mm:amm3|ab0[1]                    ; |e_e_amm|add_mm:amm3|ab0[1]                    ; combout          ;
+; |e_e_amm|add_mm:amm5|ab0[0]                    ; |e_e_amm|add_mm:amm5|ab0[0]                    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1    ; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm3|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S3    ; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S3    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa1|S2    ; |e_e_amm|add_mm:amm5|full_adder_test:fa1|S2    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm1|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm1|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S3    ; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S3    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab0[1]                    ; |e_e_amm|add_mm:amm2|ab0[1]                    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab1[0]                    ; |e_e_amm|add_mm:amm2|ab1[0]                    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum   ; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|ab0[0]                    ; |e_e_amm|add_mm:amm7|ab0[0]                    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm3|ab1[3]                    ; |e_e_amm|add_mm:amm3|ab1[3]                    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa2|S3    ; |e_e_amm|add_mm:amm2|full_adder_test:fa2|S3    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab0[2]                    ; |e_e_amm|add_mm:amm2|ab0[2]                    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab1[1]                    ; |e_e_amm|add_mm:amm2|ab1[1]                    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa1|S2    ; |e_e_amm|add_mm:amm7|full_adder_test:fa1|S2    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm4|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa3|S3    ; |e_e_amm|add_mm:amm2|full_adder_test:fa3|S3    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab0[3]                    ; |e_e_amm|add_mm:amm2|ab0[3]                    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab1[2]                    ; |e_e_amm|add_mm:amm2|ab1[2]                    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm5|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa2|sum~0 ; |e_e_amm|add_mm:amm7|full_adder_test:fa2|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm5|ab1[3]                    ; |e_e_amm|add_mm:amm5|ab1[3]                    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm4|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm2|ab1[3]                    ; |e_e_amm|add_mm:amm2|ab1[3]                    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm2|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm7|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S3    ; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S3    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm5|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm2|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm7|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa6|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa6|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm7|ab1[3]                    ; |e_e_amm|add_mm:amm7|ab1[3]                    ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm6|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa7|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa7|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm4|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm6|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm4|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa2|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa2|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa3|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm6|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa4|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; |e_e_amm|add_mm:amm8|full_adder_test:fa8|ca~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1~0  ; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1~0  ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S3~0  ; |e_e_amm|add_mm:amm3|full_adder_test:fa5|S3~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum~0 ; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~1  ; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~1  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~2  ; |e_e_amm|add_mm:amm7|full_adder_test:fa2|ca~2  ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~1  ; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~1  ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~2  ; |e_e_amm|add_mm:amm5|full_adder_test:fa3|ca~2  ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S3~0  ; |e_e_amm|add_mm:amm7|full_adder_test:fa5|S3~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum~0 ; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa6|sum~0 ; |e_e_amm|add_mm:amm4|full_adder_test:fa6|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa1|sum~0 ; |e_e_amm|add_mm:amm3|full_adder_test:fa1|sum~0 ; combout          ;
+; |e_e_amm|p[0]                                  ; |e_e_amm|p[0]                                  ; padio            ;
+; |e_e_amm|p[1]                                  ; |e_e_amm|p[1]                                  ; padio            ;
+; |e_e_amm|p[2]                                  ; |e_e_amm|p[2]                                  ; padio            ;
+; |e_e_amm|p[15]                                 ; |e_e_amm|p[15]                                 ; padio            ;
+; |e_e_amm|x[0]                                  ; |e_e_amm|x[0]~corein                           ; combout          ;
+; |e_e_amm|y[0]                                  ; |e_e_amm|y[0]~corein                           ; combout          ;
+; |e_e_amm|x[1]                                  ; |e_e_amm|x[1]~corein                           ; combout          ;
+; |e_e_amm|y[1]                                  ; |e_e_amm|y[1]~corein                           ; combout          ;
+; |e_e_amm|x[2]                                  ; |e_e_amm|x[2]~corein                           ; combout          ;
+; |e_e_amm|y[2]                                  ; |e_e_amm|y[2]~corein                           ; combout          ;
+; |e_e_amm|x[3]                                  ; |e_e_amm|x[3]~corein                           ; combout          ;
+; |e_e_amm|y[3]                                  ; |e_e_amm|y[3]~corein                           ; combout          ;
+; |e_e_amm|y[4]                                  ; |e_e_amm|y[4]~corein                           ; combout          ;
+; |e_e_amm|x[4]                                  ; |e_e_amm|x[4]~corein                           ; combout          ;
+; |e_e_amm|x[5]                                  ; |e_e_amm|x[5]~corein                           ; combout          ;
+; |e_e_amm|y[5]                                  ; |e_e_amm|y[5]~corein                           ; combout          ;
+; |e_e_amm|y[6]                                  ; |e_e_amm|y[6]~corein                           ; combout          ;
+; |e_e_amm|x[6]                                  ; |e_e_amm|x[6]~corein                           ; combout          ;
+; |e_e_amm|x[7]                                  ; |e_e_amm|x[7]~corein                           ; combout          ;
+; |e_e_amm|y[7]                                  ; |e_e_amm|y[7]~corein                           ; combout          ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |e_e_amm|add_mm:amm1|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm1|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm3|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S3    ; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S3    ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa2|S1    ; |e_e_amm|add_mm:amm4|full_adder_test:fa2|S1    ; combout          ;
+; |e_e_amm|add_mm:amm5|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm5|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa2|sum~0 ; |e_e_amm|add_mm:amm7|full_adder_test:fa2|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm4|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm4|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa8|sum   ; |e_e_amm|add_mm:amm2|full_adder_test:fa8|sum   ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm7|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm7|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm7|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa3|S1    ; |e_e_amm|add_mm:amm6|full_adder_test:fa3|S1    ; combout          ;
+; |e_e_amm|add_mm:amm6|full_adder_test:fa4|S1    ; |e_e_amm|add_mm:amm6|full_adder_test:fa4|S1    ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1~0  ; |e_e_amm|add_mm:amm2|full_adder_test:fa1|S1~0  ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum~0 ; |e_e_amm|add_mm:amm2|full_adder_test:fa6|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum~0 ; |e_e_amm|add_mm:amm2|full_adder_test:fa5|sum~0 ; combout          ;
+; |e_e_amm|add_mm:amm3|full_adder_test:fa1|sum~0 ; |e_e_amm|add_mm:amm3|full_adder_test:fa1|sum~0 ; combout          ;
+; |e_e_amm|p[1]                                  ; |e_e_amm|p[1]                                  ; padio            ;
+; |e_e_amm|p[2]                                  ; |e_e_amm|p[2]                                  ; padio            ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Sat May 07 01:08:57 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off e_e_amm -c e_e_amm
+Info: Using vector source file "C:/Users/Bhaumik/Desktop/caa/e_e_amm/e_e_amm.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      39.76 %
+Info: Number of transitions in simulation is 484
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sat May 07 01:08:57 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
